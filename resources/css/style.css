@@ -1,0 +1,647 @@
+
+/*===============================
+
+Template Name : Montril
+Template URI  : https://cutt.ly/5hJLqLO
+Author        : Kibria Ahmed
+Author URI    : facebook.com/69kibria
+Version       : 1.0
+Description   : Montreal Creative Portfolio PSD Web Theme
+Contact       : kibriaahmedrana@gmail.com
+
+================================*/
+
+
+/*===============================
+
+--------CSS INDEX--------
+
+ 1. Google Fonts (Abel)
+ 2. Common CSS
+ 3. Reuseable Components
+ 4. header Section
+ 5. Quote Section
+ 6. Project Section
+ 6. Completed Project Section
+ 7. Work Section
+ 8. Client Section
+ 9. Contact Section
+ 10. More-Contact Section
+ 11. Footer Section
+
+================================*/
+
+/* 1. Google Fonts (Abel) */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* 2. Common CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 62.5%;
+    font-weight: 400;
+    font-family: 'Abel', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a:link,
+a:hover{
+    text-decoration: none;
+}
+
+/* 3. Reuseable Components */
+
+.row{
+    max-width: 110rem;
+    margin: auto;
+}
+
+section{
+    padding: 4rem 0;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #ffda00;
+    background: red;
+    padding: 1.2rem 3.6rem;
+    border: .2rem solid red;
+    border-radius: 2.4rem;
+    text-transform: uppercase;
+    transition: 0.3s ease-in;
+}
+
+/*===============================
+  
+4. header Section
+
+================================*/
+
+header{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/k.png) no-repeat;
+    background-attachment: fixed;
+    background-position: 84.5rem 5rem;
+    height: 100vh;
+}
+
+.header .hp{
+    max-width: 100%;
+}
+
+.nav::after{
+   content: '';
+   display: table;
+   clear: both;
+}
+
+.logo{
+    margin-top: 4.5rem;
+    margin-left: 14rem;
+    float: left;
+    width: 6.5rem;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menu{
+    margin-top: 4.5rem;
+    float: right;
+    margin-right: 14rem;
+}
+
+.menu-icon a ion-icon{
+    padding-top: 3rem;
+    display:block;
+    font-size: 3.5rem;
+    color: #000;
+    padding: .3rem .4rem;
+    background: #ffda00;
+    border: .1rem solid black;
+}
+
+.menu-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.menu-item a{
+    margin: 0;
+    display: block;
+    font-size: 2.5rem;
+    padding: 1.2rem 0;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #ffdb00;
+    transition: 0.3s ease-in;
+}
+
+.menu-item a:hover{
+    color: #ffad00;
+    font-size:2.7rem ;
+    border-bottom: .2rem solid #ffda00;
+}
+
+.uk-offcanvas-bar{
+    background:#15161B ;
+}
+
+.uk-offcanvas-bar .uk-close{
+    color: #000;
+    padding: .5rem;
+    background: #fff;
+}
+
+.uk-offcanvas-bar .uk-close:hover{
+    color: #ffad00;
+    background: #15161B;
+}
+
+.uk-active{
+    background:rgba(0,0,0,0.8);
+}
+
+.uk-sticky-fixed .logo{
+    margin-top: 0;
+    margin: 1rem 0;
+    margin-left: 14.5rem;
+    width: 4.5rem;
+}
+.uk-sticky-fixed .menu{
+    margin-top: 0;
+    margin: 1.5rem 0;
+    margin-right: 14.5rem;
+}
+
+.uk-sticky-fixed .menu-icon a ion-icon{
+    font-size: 2.8rem;
+}
+
+.hero-text-box{
+    width: 70%;
+    margin: auto;
+    color: #fff;
+    padding: 8.5rem 0;
+    text-align: center;
+}
+
+.hero-text-box h1{
+    margin: 0;
+    word-spacing: .4rem;
+    letter-spacing: .3rem;
+    line-height: 1.2;
+    font-size: 6.9rem;
+    color: #ffdb00;
+}
+
+.hero-text-box span{
+    padding: 1.3rem 0;
+   display: inline-block;
+    width: 65%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.button{
+    padding-top: 1.6rem;
+}
+
+.btn-hero{
+    padding: .9rem 3.5rem;
+    color: #fff;
+    background: transparent;
+    border-color: #ffdb00;
+}
+
+.btn-hero:hover{
+    color:  #ffdb00;
+}
+
+.bb{
+    width: 25rem;
+    margin: auto;
+    height: 35rem;
+    position: relative;
+}
+
+.scroll ion-icon{
+    position: absolute;
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: #ffad00;
+    animation: 1.5s arrow infinite ease-in;
+}
+
+
+@keyframes arrow{
+    0%{
+        top: .8rem;
+    }
+
+    60%{
+        top: 2.3rem;
+    }
+
+    100%{
+        top: .8rem;
+    }
+}
+
+/*===============================
+  
+5. Quote Section
+
+================================*/
+
+.quote-section{
+    background: #ffda00;
+}
+
+.quote{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.quote q{
+    font-size: 2rem;
+    color: #181a1f;
+    font-style: normal;
+}
+
+/*===============================
+  
+6. Project Section
+
+================================*/
+
+.project-section .row{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.pj-grid-item a ion-icon{
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #000;
+    background: #ffda00;
+    padding: .9rem 1rem;
+}
+
+.pj-grid-item h4{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    padding: 1.5rem 0;
+    color: #ffda00;
+}
+
+.pj-grid-item p{
+    font-size:1.5rem ;
+    color: #737375;
+    margin-top: 0;
+}
+
+.project-padding{
+    padding-top: 7rem;
+}
+
+.btn-project{
+    font-weight: 400;
+    background: transparent;
+    color: #737375;
+    border-color:#ffda00 ;
+}
+
+.btn-project:hover{
+    color: #ffda00;
+}
+
+/*===============================
+  
+6. Completed Project Section
+
+================================*/
+
+.completed-project-section{
+    background: #17191e;
+}
+
+.cm-project-grid{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;
+    text-align: center;
+}
+
+.cm-pj-grid-item ion-icon{
+    font-size:xx-large;
+    color:#ffda00 ;
+}
+
+.cm-pj-grid-item h4{
+    margin: 0;
+    padding: 2.5rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.cm-pj-grid-item p{
+    margin: 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffda00 ;
+}
+
+/*===============================
+  
+7. Work Section
+
+================================*/
+
+.content-box{
+    width: 70%;
+    margin: auto;
+}
+
+.content-box h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #ffda00 ;
+}
+
+.content-box p{
+    padding-top: 1.6rem;
+    font-size: 1.3rem;
+    color:#737375 ;
+}
+
+.tab-btn{
+    text-align: center;
+    padding: 4.5rem 0;
+}
+
+.tab-btn ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 .8rem;
+}
+
+.tab-btn ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #737375;
+    padding: .3rem 1.6rem;
+    border: .2rem solid #ffda00 ;
+}
+
+.mixitup-control-active{
+    background: #ffda00 ;
+}
+
+
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .6rem;
+}
+
+.work-grid-item {
+    height: 25rem;
+}
+
+.work-grid-item:nth-child(2){
+    grid-column-start:2 ;
+    grid-column-end:4 ;
+}
+
+.work-grid-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.more{
+    padding-top: 4.5rem;
+    text-align: center;
+}
+
+
+.btn-work{
+    font-weight: 400;
+    background: transparent;
+    color: #737375;
+    border-color:#ffda00 ;
+}
+
+.btn-work:hover{
+    color: #ffda00;
+}
+
+/*===============================
+  
+8. Client Section
+
+================================*/
+
+.client-section{
+    background: #17191e ;
+}
+
+.abc{
+    width: 70%;
+    margin: auto;
+}
+
+.abc img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.abc img:nth-child(1){
+    background-position: center bottom;
+}
+
+.uk-transition-toggle{
+    padding: 0 2.5rem;
+    width: 15rem;
+}
+
+.uk-dotnav > .uk-active > * {
+    background-color: #ffff00;
+    border-color: transparent;
+
+}
+
+.abc .uk-active{
+    background:none ;
+}
+
+.client-txt-box .content-box p{
+   padding-bottom: 4rem;
+}
+
+/*===============================
+  
+9. Contact Section
+
+================================*/
+
+.form{
+    padding-top: 3rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form input{
+    font-size: 1.5rem;
+    padding: .7rem;
+    width: 100%;
+    margin: .8rem 0;
+    color: #737375;
+    border-color: #737375;
+}
+
+.divide2 input:nth-child(1){
+    float: left;
+    width: 49%;
+    display: inline-block;
+    margin: 0;
+
+}
+
+.divide2 input:nth-child(2){
+    float: right;
+    width: 49%;
+    display: inline-block;
+    margin: 0;
+}
+
+.xyz{
+    text-align: center;
+}
+
+.az input{
+    padding-bottom: 100px;
+}
+
+.btn-form{
+    margin: 1.2rem 0;
+    padding: .8rem 6.9rem;
+    background: transparent;
+    border-color: #ffad00;
+    color:#737375 ;
+}
+
+.btn-form:hover{
+    color: #ffad00;
+}
+
+/*===============================
+  
+10. More-Contact Section
+
+================================*/
+
+.more-contact-section{
+    background: #ffda00;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    padding-top: 1.8rem;
+}
+
+.n-c-g-i p{
+    font-size: 1.2rem;
+    color: #000;
+    margin-top: 1.2rem;
+}
+
+.contact-grid a ion-icon{
+    font-size: 2rem;
+    color: #fff;
+    padding: .7rem .8rem ;
+    background: #17191e;
+}
+
+/*===============================
+  
+11. Footer Section
+
+================================*/
+
+.footer-section{
+    background:#17191e ;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+
+}
+
+.footer-section p{
+    font-size: 1.5rem;
+    color: #fff;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+}
+
+.footer-section p a{
+    color: #ffad00;
+}
+
+.social-link ion-icon{
+    font-size: 2rem;
+    padding: 0 .7rem;
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+
+.social-link ion-icon:hover{
+    color: #ffad00;
+}
+
+.totop{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #ffda00;
+    color: #000;
+    float: right;
+    border: .1rem solid #ffda00;
+    transition: 0.3s ease-in;
+}
+
+.totop:hover{
+    background: transparent;
+    color:#ffda00 ;
+}

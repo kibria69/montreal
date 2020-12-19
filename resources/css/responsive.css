@@ -1,0 +1,163 @@
+
+@media screen and (max-width:1200px){
+     
+    header{
+        height: 90vh;
+        background-position: 76.5rem 5rem;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+     
+    .totop{
+        margin-right: 5rem;
+    }
+
+    .abc{
+        width: 75%;
+    }
+
+    
+    header{
+
+        background-position: 64.5rem 5rem;
+}
+
+}
+
+@media screen and (max-width:768px){
+    
+    html,body{
+        font-size: 58%;
+    }
+
+    header{
+        background-position: 43.5rem 5rem;
+    }
+
+    .logo{
+        margin-left: 50px;
+    }
+    
+    .menu{
+        margin-right: 50px;
+    }
+
+    .uk-sticky-fixed .logo{
+        margin-left: 50px;
+    }
+
+    .uk-sticky-fixed .menu{
+        margin-right: 50px;
+    }
+
+
+    .work-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .work-grid-item:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .work-grid-item:nth-child(7) {
+       display: none;
+    }
+
+    .uk-animation-kenburns {
+        animation-name: abc;
+        animation-duration: 0s;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    html,body{
+        font-size: 52%;
+    }
+
+    
+    header{
+        background: #17191E;
+        height: 84vh;
+    }
+
+    .abc{
+        width: 65%;
+    }
+
+    .cm-pj-grid-item p{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    
+    html,body{
+        font-size: 50%;
+    }
+
+    header{
+        height: 75vh;
+    }
+
+    .work-grid{
+        display: grid;
+        grid-gap: 0;
+    }
+
+    .abc{
+        width: 54%;
+    }
+
+    .divide2 input:nth-child(1){
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .divide2 input:nth-child(2){
+        width: 100%;
+    }
+
+    
+    .cm-project-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .cm-pj-grid-item{
+        padding: 8px 0;
+        border: 1px solid #fff;
+    }
+    
+}
+
+@media screen and (max-width:360px){
+    header{
+        height: 70vh;
+    }
+
+    html,body{
+        font-size: 45%;
+    }
+
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .pj-grid-item a ion-icon{
+        font-size: 4rem;
+    }
+
+    .cm-project-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .abc{
+        width: 62%;
+    }
+
+}
